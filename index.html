@@ -3,38 +3,29 @@
 <head lang="uk">
     <meta charset="UTF-8">
     <title>My Page</title>
+    <script src="jquery-3.4.1.min.js"></script>
     <link rel="stylesheet" type="text/css" href="main.css" />
+    <script type="text/javascript" src="main.js"></script>
 </head>
 <body>
     <div class="bl-background">
         <div class="bl-containerLeft">
             
             <div class="bl-input">
-                <input	type="text" placeholder="Назва товару">
+                <input	type="text" placeholder="Назва товару" id="text">
                 <button class="bl-add" data-tooltip="Додати до кошика">Додати</button>                                       
             </div>
 
             <div class="bl-list">
                 
-                <div class="bl-row missing">
-                    <div class="bl-product">
-                        <span >Перець</span>
-                    </div>
-                    <div class="bl-count">
-                        <span class="bl-label">2</span>
-                    </div>
-                    <div class="bl-buttons">
-                        <button class="bl-buy" data-tooltip="Нема на складі">Не куплено</button>
-                    </div>
-                </div>
-                
                 <div class="bl-row">
                     <div class="bl-product">
                         Помідори
                     </div>
+                    
                     <div class="bl-count">
                         <button class="bl-minus" data-tooltip="Зменшити на одну одиницю">-</button>
-                        <span class="bl-label">3</span>
+                        <span class="bl-label">1</span>
                         <button class="bl-plus" data-tooltip="Збільшити на одну одиницю">+</button>
                     </div>
                     <div class="bl-buttons">
@@ -63,23 +54,18 @@
         
         <div class="bl-bought">
             <div class="bl-title"><b>Залишилося</b></div>
-            <div class="bl-leave">
+            <div class="bl-leave clearfix">
                 <div class="bl-item">
-                    Помідори
-                    <span class="bl-amount">3</span>
+                    <span id="item">Помідори</span>
+                    <span class="bl-amount">1</span>
                 </div>
                 <div class="bl-item">
-                    Огірки
+                    <span id="item">Огірки</span>
                     <span class="bl-amount">1</span>
                 </div>
             </div>                    
             <div class="bl-title"><b>Куплене</b></div>
-            <div class="bl-bb">
-                <span class="bl-item">
-                    <s>Перець</s>
-                    <span class="bl-amount">2</span>
-                </span>
-            </div>   
+            <div></div>
         </div>
     </div>
     

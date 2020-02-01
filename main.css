@@ -27,6 +27,7 @@ body{
     display: inline;
 }
 
+
 .bl-row{
     border: 1px;
     padding: 5px;
@@ -39,12 +40,17 @@ body{
     text-decoration: line-through;
 }
 
-.missing .bl-count .bl-label {
-    margin-left: 34px;
-}
-
 .missing .bl-buttons .bl-buy {
     width: 100%;
+}
+.missing .bl-minus{
+    visibility: hidden;
+}
+.missing .bl-plus{
+    visibility: hidden;
+}
+.missing .bl-cross{
+    display: none;
 }
 
 .bl-product{
@@ -94,6 +100,7 @@ body{
 
 .bl-bb .bl-label {
     margin-left: 34px;
+    font-size: 10px;
 }
 
 
@@ -118,7 +125,7 @@ body{
     font-size: 12px;
     padding: 4px;
     border-radius: 10%;
-    display: inline;
+    display: inline-block;
 }
 
 .bl-amount{
@@ -167,6 +174,7 @@ body{
 .bl-badge:hover .bl-name{
     visibility: visible;
 }
+
 
 
 @media(max-width:500px)	{
@@ -232,10 +240,11 @@ button:hover::after{
 
 .bl-label {
     background: lightgray;
-    padding: 6px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
     border-radius: 20%;
+    font-size: 12px;
     border: 1px;
 }
 .bl-plus {
@@ -248,11 +257,11 @@ button:hover::after{
     border: none;
 }
 .bl-minus {
-    background: #db2828;
+    background: #ee9e9e;
     border-radius: 100%;
     width: 30px;
     height: 30px;
-    box-shadow: 0px 3px #be2627;
+    box-shadow: 0px 3px #ee9e9e;
     border: none;
     color: white;
 }
