@@ -98,9 +98,8 @@ body{
     border: none;
 }
 
-.bl-bb .bl-label {
-    margin-left: 34px;
-    font-size: 10px;
+.bl-bb .bl-item #item{
+    text-decoration: line-through;
 }
 
 
@@ -236,6 +235,13 @@ button::after{
 button:hover::after{
     top:-50%;
     opacity: 1;
+}
+
+.bl-minus::after{
+    left:-100%;
+}
+.bl-minus:hover::after{
+    left:-100%;
 }
 
 .bl-label {

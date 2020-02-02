@@ -18,7 +18,7 @@
 
             <div class="bl-list">
                 
-                <div class="bl-row">
+                <div class="bl-row" id="1">
                     <div class="bl-product">
                         Помідори
                     </div>
@@ -34,9 +34,25 @@
                     </div>
                 </div>
                 
-                <div class="bl-row">
+                <div class="bl-row" id="2">
                     <div class="bl-product">
                         Огірки
+                    </div>
+                    <div class="bl-count">
+                        <button class="bl-minus" data-tooltip="Зменшити на одну одиницю">-</button>
+                        <span class="bl-label">1</span>
+                        <button class="bl-plus"data-tooltip="Збільшити на одну одиницю">+</button>
+                    </div>
+                    <div class="bl-buttons">
+                        <button class="bl-buy" data-tooltip="Купи">Куплено</button>
+                        <button class="bl-cross" data-tooltip="При- брати">x</button>
+                    </div>
+                </div>
+
+                
+                <div class="bl-row" id="3">
+                    <div class="bl-product">
+                        Перець
                     </div>
                     <div class="bl-count">
                         <button class="bl-minus" data-tooltip="Зменшити на одну одиницю">-</button>
@@ -55,17 +71,21 @@
         <div class="bl-bought">
             <div class="bl-title"><b>Залишилося</b></div>
             <div class="bl-leave clearfix">
-                <div class="bl-item">
+                <div class="bl-item" id="1">
                     <span id="item">Помідори</span>
                     <span class="bl-amount">1</span>
                 </div>
-                <div class="bl-item">
+                <div class="bl-item" id="2">
                     <span id="item">Огірки</span>
+                    <span class="bl-amount">1</span>
+                </div>
+                <div class="bl-item" id="3">
+                    <span id="item">Перець</span>
                     <span class="bl-amount">1</span>
                 </div>
             </div>                    
             <div class="bl-title"><b>Куплене</b></div>
-            <div></div>
+            <div class="bl-bb"></div>
         </div>
     </div>
     
