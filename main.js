@@ -32,7 +32,7 @@ $(document).ready(function () {
     }
   } );
   $("#text").keypress(function(e){
-    if(e.keyCode == 13)
+    if(e.keyCode === 13)
     {
       var title = $("#text").val()
       if(title){
@@ -98,14 +98,20 @@ $(document).ready(function () {
   // Change name of the product
   $( "div.bl-list" ).on( "click", ".bl-product", function() {
     if ($('input', this).length == 0) {
-      var name = $(this).text().trim();
-      $(this).html('<input class="input-name">');
-      $('input', this).val(name).focus().focusout(
-        function() {
-          var name = $(this).val();
-          $(this).parent().text(name);
+        if($(this).parent(".bl-row.missing").length==0){
+            var name = $(this).text().trim();
+            var parent = $(this);
+            $(this).html('<input class="input-name">');
+            $('input', this).css("width","100%")
+            $('input', this).val(name).focus().focusout(
+            function() {
+              var name = $(this).val();
+              parent.text(name);
+              var id = parent.parent().attr('id');
+              $(".bl-bought").find("#"+id).find("#item").text(name);
+            }
+          );
         }
-      );
     }
   });
 
